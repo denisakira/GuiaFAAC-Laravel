@@ -1,8 +1,8 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-dark box-shadow">
     <div class="container-fluid">
 
         <div class="navbar-header aligned">
-            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+            <button type="button" id="sidebarCollapse" class="btn btn-info custom-btn">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>

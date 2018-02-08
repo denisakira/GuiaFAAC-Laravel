@@ -11,9 +11,9 @@ body {
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 300;
-    line-height: 1.7em;
+    line-height: 1.6em;
     color: #000000;
 }
 
@@ -35,6 +35,11 @@ a, a:hover, a:focus {
     box-shadow: none;
     outline: none !important;
     border: none;
+    background-color: #009eb5;
+}
+
+.custom-btn{
+    background-color: #e62645;
 }
 
 .line {
@@ -167,6 +172,5 @@ a.article, a.article:hover {
         margin-left: 0;
     }
     #sidebarCollapse span {
-        display: none;
     }
 }

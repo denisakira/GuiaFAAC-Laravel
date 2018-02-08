@@ -15,15 +15,16 @@
 </head>
 
 <body>
+@include('layouts.nav')
 
 <div class="wrapper">
-    <!-- Sidebar Holder -->
+
+<!-- Sidebar Holder -->
     @include('layouts.sidebar')
 
     <!-- Page Content Holder -->
     <div id="content">
 
-        @include('layouts.nav')
 
         <div class="main-content">
             @yield('content')
