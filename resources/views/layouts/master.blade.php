@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <link href="/img/unesp.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/img/unesp.ico" rel="icon" />
+
+
     <title>Guia FAAC</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
+    <!-- Fonts Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
 
 </head>
 
 <body>
+
+
 @include('layouts.nav')
 
 <div class="wrapper">
@@ -44,6 +53,7 @@
     $(document).ready(function () {
         $('#sidebarCollapse').on('click', function () {
             $('#sidebar').toggleClass('active');
+            $('#navbar').toggleClass('active');
         });
     });
 </script>

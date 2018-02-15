@@ -3,6 +3,14 @@
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0 auto;
+    padding: 0;
+}
+
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -58,15 +66,15 @@ a, a:hover, a:focus {
 }
 
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 15.5em;
+    max-width: 15.5em;
     background: #009eb5;
     color: #fff;
     transition: all 0.3s;
 }
 
 #sidebar.active {
-    margin-left: -250px;
+    margin-left: -15.5em;
 }
 
 #sidebar .sidebar-header {
@@ -92,6 +100,7 @@ a, a:hover, a:focus {
 #sidebar ul li a:hover {
     color: #009eb5;
     background: #fff;
+    height: 100%;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
@@ -151,8 +160,8 @@ a.article, a.article:hover {
     CONTENT STYLE
 ----------------------------------------------------- */
 #content {
-    min-height: 100vh;
     transition: all 0.3s;
+
 }
 
 .main-content{
@@ -164,13 +173,107 @@ a.article, a.article:hover {
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
-@media (max-width: 768px) {
+@media (min-width:320px)  {
     #sidebar {
-        margin-left: -250px;
+        margin-left: -15.5em;
     }
     #sidebar.active {
         margin-left: 0;
     }
     #sidebarCollapse span {
     }
+
+    #navbar.active{
+        width: 180%;
+    }
+
+    #faac-img{
+        display: none;
+    }
+
+    #unesp-img{
+        display: none;
+    }
+
+    .main-content{
+        padding: 0;
+        margin: 0.7em;
+    }
+
+    .navbar{
+        width: 130%;
+        transition: 0.3s;
+    }
+
+    #searchbar{
+        width: 30%;
+    }
+
+}
+
+@media (min-width:481px) {
+    #sidebar {
+        margin-left: -15.5em;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+    }
+
+    #navbar.active{
+        width: 140%;
+    }
+
+    #faac-img{
+        display: none;
+    }
+
+    #unesp-img{
+        display: none;
+    }
+
+    .main-content{
+        padding: 0;
+        margin: 0.7em;
+    }
+
+    .navbar{
+        width: 120%;
+        transition: 0.3s;
+    }
+
+    #searchbar{
+        width: 60%;
+    }
+
+}
+
+@media (min-width:961px)  {
+    .navbar{
+        width: 100%;
+    }
+
+    #navbar.active{
+        width: 100%;
+    }
+    #faac-img{
+        display: block;
+    }
+
+    #unesp-img{
+        display: block;
+    }
+
+    #searchbar{
+        width: 40%;
+    }
+
+    .main-content{
+        padding: 2em;
+        padding-left: 4em;
+        padding-right: 6em;
+    }
+
+
 }

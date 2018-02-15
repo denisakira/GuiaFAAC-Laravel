@@ -69,6 +69,18 @@
                 @endforeach
             </ul>
         </li>
+        <li>
+            <a href="#labSubmenu" data-toggle="collapse" aria-expanded="false">LABORATÓRIOS</a>
+            <ul class="collapse list-unstyled" id="labSubmenu">
+                @foreach($all_text as $text)
+                    @if($text->topico == "Laboratorios")
+                        <li>
+                            <a href="/{{ $text->nome }}">{{  $text->titulo }}</a>
+                        </li>
+                    @endif
+                @endforeach
+            </ul>
+        </li>
 
 
     </ul>
