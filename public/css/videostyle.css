@@ -186,7 +186,7 @@ a.article, a.article:hover {
     }
 
     #navbar.active{
-        width: 180%;
+        width: 250%;
     }
 
     #faac-img{
@@ -203,7 +203,7 @@ a.article, a.article:hover {
     }
 
     .navbar{
-        width: 130%;
+        width: 180%;
         transition: 0.3s;
     }
 
@@ -226,7 +226,7 @@ a.article, a.article:hover {
     }
 
     #navbar.active{
-        width: 130%;
+        width: 170%;
     }
 
     #faac-img{
@@ -243,7 +243,7 @@ a.article, a.article:hover {
     }
 
     .navbar{
-        width: 120%;
+        width: 150%;
         transition: 0.3s;
     }
 

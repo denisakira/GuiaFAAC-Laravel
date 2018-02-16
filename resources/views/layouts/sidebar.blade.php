@@ -81,6 +81,25 @@
                 @endforeach
             </ul>
         </li>
+        <li>
+            <a href="#posSubmenu" data-toggle="collapse" aria-expanded="false">PÓS-GRADUAÇÃO</a>
+            <ul class="collapse list-unstyled" id="posSubmenu">
+                @foreach($all_text as $text)
+                    @if($text->topico == "Pos")
+                        <li>
+                            <a href="/{{ $text->nome }}">{{  $text->titulo }}</a>
+                        </li>
+                    @endif
+                @endforeach
+            </ul>
+        </li>
+
+        <li>
+            <a href="/videos">VIDEOS</a>
+        </li>
+        <li>
+            <a href="/expediente">EXPEDIENTE</a>
+        </li>
 
 
     </ul>

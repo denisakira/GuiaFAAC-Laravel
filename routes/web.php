@@ -13,4 +13,11 @@
 
 Route::get('/', 'TextoController@index');
 
+Route::get('/expediente', 'TextoController@expediente');
+
+Route::get('/videos', 'TextoController@videos');
+
+Route::get('/busca', 'TextoController@busca');
+
 Route::get('/{nome}', 'TextoController@detalhe');
+

@@ -25,7 +25,7 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/videostyle.css">
     <!-- Fonts Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
@@ -39,10 +39,10 @@
 
 <div class="wrapper">
 
-<!-- Sidebar Holder -->
-    @include('layouts.sidebar')
+    <!-- Sidebar Holder -->
+@include('layouts.sidebar')
 
-    <!-- Page Content Holder -->
+<!-- Page Content Holder -->
     <div id="content">
 
 
