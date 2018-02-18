@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Input;
+
 use App\Texto;
 
 class TextoController extends Controller
@@ -31,6 +33,15 @@ class TextoController extends Controller
     }
 
     public function busca(){
-        return view('textos.expediente');
+
+        $busca = Input::get('busca');
+
+        $resultado = Texto::where('nome','like','%'.$busca.'%')->orWhere('texto',
+            'like','%'.$busca.'%')->get();
+
+        if(count($resultado)>0)
+            return view('textos.busca',compact("resultado"));
+        else
+            return view('textos.busca');
     }
 }

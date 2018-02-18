@@ -31,6 +31,7 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
+
 .navbar {
     padding: 15px 10px;
     background: #e62645;
@@ -169,6 +170,24 @@ a.article, a.article:hover {
     padding-left: 4em;
     padding-right: 6em;
 }
+
+.main-content a:link {
+    color: #009eb5;
+}
+
+.main-content a:hover {
+    color: #e62645;
+}
+
+.main-content a:visited {
+    color: green;
+}
+
+.main-content a:active {
+    color: purple;
+}
+
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES

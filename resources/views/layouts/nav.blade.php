@@ -20,9 +20,11 @@
         </div>
 
         <div class="nav-item" id="searchbar">
-            <form class="form-inline" method="get" action="/busca">
-                <input class="form-control mr-sm-2" type="search" placeholder="Busca" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i>
+            <form class="form-inline" method="POST" action="/busca">
+                {{ csrf_field() }}
+                <input class="form-control mr-sm-2" type="search" placeholder="Busca" name="busca" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                    <i class="fas fa-search"></i>
                 </button>
             </form>
         </div>
