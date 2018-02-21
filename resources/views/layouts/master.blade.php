@@ -22,6 +22,7 @@
         }(document, 'script', 'facebook-jssdk'));</script>
 
 
+
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Our Custom CSS -->
@@ -65,6 +66,7 @@
         $('#sidebarCollapse').on('click', function () {
             $('#sidebar').toggleClass('active');
             $('#navbar').toggleClass('active');
+            $('#fb-video').toggleClass('active');
         });
     });
 </script>

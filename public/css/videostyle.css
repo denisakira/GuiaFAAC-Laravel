@@ -71,6 +71,7 @@ a, a:hover, a:focus {
     background: #009eb5;
     color: #fff;
     transition: all 0.3s;
+    min-height: 200vh;
 }
 
 #sidebar.active {
@@ -170,23 +171,27 @@ a.article, a.article:hover {
     padding-right: 6em;
 }
 
+
+
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
-@media (min-width:320px)  {
+@media (min-width:320px) and (max-width: 480px)  {
+
     #sidebar {
         margin-left: -15.5em;
-        min-height: 60em;
-
     }
     #sidebar.active {
         margin-left: 0;
+        min-height: 350vmin;
+
     }
     #sidebarCollapse span {
     }
 
     #navbar.active{
-        width: 250%;
+        width: 190%;
     }
 
     #faac-img{
@@ -203,7 +208,7 @@ a.article, a.article:hover {
     }
 
     .navbar{
-        width: 180%;
+        width: 160%;
         transition: 0.3s;
     }
 
@@ -211,16 +216,25 @@ a.article, a.article:hover {
         width: 30%;
     }
 
+
+    iframe{
+        height: 30%;
+        width: 85%;
+        padding-bottom: 0;
+    }
+
+
 }
 
-@media (min-width:481px) {
+@media (min-width:481px) and (max-width: 960px) {
     #sidebar {
         margin-left: -15.5em;
-        min-height: 35em;
 
     }
     #sidebar.active {
         margin-left: 0;
+        min-height: 250vmin;
+
     }
     #sidebarCollapse span {
     }
@@ -251,6 +265,14 @@ a.article, a.article:hover {
         width: 60%;
     }
 
+    iframe{
+        height: 35%;
+        width: 85%;
+        padding-bottom: 10%;
+    }
+
+
+
 }
 
 @media (min-width:961px)  {
@@ -280,8 +302,14 @@ a.article, a.article:hover {
     }
 
     #sidebar{
-        min-height: 35em;
+        min-height: 200vmin;
     }
 
+
+    iframe{
+        height: 40%;
+        width: 100%;
+        padding-bottom: 10%;
+    }
 
 }

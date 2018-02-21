@@ -12,7 +12,7 @@ class TextoController extends Controller
 {
     //
     public function index(){
-        return view('textos.index');
+        return view('textos.videos');
     }
 
     public function detalhe($nome){
@@ -33,6 +33,7 @@ class TextoController extends Controller
     }
 
     public function busca(){
+    //crédito: http://justlaravel.com/search-functionality-laravel/
 
         $busca = Input::get('busca');
 

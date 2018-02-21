@@ -8,7 +8,9 @@
         </div>
 
         <div class="nav-item">
-            <img src="/img/guia.png">
+            <a href="/">
+                <img src="/img/guia.png">
+            </a>
         </div>
 
         <div class="nav-item" id="faac-img">
